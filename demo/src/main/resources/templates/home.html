@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>EMP 화면입니다!</h2>
+
+<table style="width:1000px; text-align:center;" id = "tab">
+  <tr>
+    <th id="deptno">deptno</th>
+    <th id="dname">dname</th>
+    <th id="LOC">LOC</th>
+  </tr>
+</table>
+</body>
+</html>
+
+ <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript">
+  var tr = "";
+
+  $.ajax({
+        url:'/api/v1/dept',
+        type: 'GET',
+        dataType: 'json',
+        success: function (response) {
+        	for(var i=0;i<response.length;i++ ){
+        	tr = $("<tr> <tr>")
+   
+	  		
+	  		deptno = $("<td>" + response[i].deptno + "</td>");
+	  			dname = $("<td>" + response[i].dname + "</td>");
+	  			LOC = $("<td>" + response[i].loc + "</td>");
+	  			tr.append(deptno);
+	  			tr.append(dname);
+	  			tr.append(LOC);
+	  			$("#tab").append(tr);
+        	}
+
+        },
+  	});
+  </script>
+</html>

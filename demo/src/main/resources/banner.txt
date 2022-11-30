@@ -1,0 +1,22 @@
+                                                                                                                                   
+                                                                                                                                   
+KKKKKKKKK    KKKKKKKIIIIIIIIIINNNNNNNN        NNNNNNNN        GGGGGGGGGGGGG                    JJJJJJJJJJJ     BBBBBBBBBBBBBBBBB   
+K:::::::K    K:::::KI::::::::IN:::::::N       N::::::N     GGG::::::::::::G                    J:::::::::J     B::::::::::::::::B  
+K:::::::K    K:::::KI::::::::IN::::::::N      N::::::N   GG:::::::::::::::G                    J:::::::::J     B::::::BBBBBB:::::B 
+K:::::::K   K::::::KII::::::IIN:::::::::N     N::::::N  G:::::GGGGGGGG::::G                    JJ:::::::JJ     BB:::::B     B:::::B
+KK::::::K  K:::::KKK  I::::I  N::::::::::N    N::::::N G:::::G       GGGGGG                      J:::::J         B::::B     B:::::B
+  K:::::K K:::::K     I::::I  N:::::::::::N   N::::::NG:::::G                                    J:::::J         B::::B     B:::::B
+  K::::::K:::::K      I::::I  N:::::::N::::N  N::::::NG:::::G                                    J:::::J         B::::BBBBBB:::::B 
+  K:::::::::::K       I::::I  N::::::N N::::N N::::::NG:::::G    GGGGGGGGGG                      J:::::j         B:::::::::::::BB  
+  K:::::::::::K       I::::I  N::::::N  N::::N:::::::NG:::::G    G::::::::G                      J:::::J         B::::BBBBBB:::::B 
+  K::::::K:::::K      I::::I  N::::::N   N:::::::::::NG:::::G    GGGGG::::G          JJJJJJJ     J:::::J         B::::B     B:::::B
+  K:::::K K:::::K     I::::I  N::::::N    N::::::::::NG:::::G        G::::G          J:::::J     J:::::J         B::::B     B:::::B
+KK::::::K  K:::::KKK  I::::I  N::::::N     N:::::::::N G:::::G       G::::G          J::::::J   J::::::J         B::::B     B:::::B
+K:::::::K   K::::::KII::::::IIN::::::N      N::::::::N  G:::::GGGGGGGG::::G          J:::::::JJJ:::::::J       BB:::::BBBBBB::::::B
+K:::::::K    K:::::KI::::::::IN::::::N       N:::::::N   GG:::::::::::::::G           JJ:::::::::::::JJ        B:::::::::::::::::B 
+K:::::::K    K:::::KI::::::::IN::::::N        N::::::N     GGG::::::GGG:::G             JJ:::::::::JJ          B::::::::::::::::B  
+KKKKKKKKK    KKKKKKKIIIIIIIIIINNNNNNNN         NNNNNNN        GGGGGG   GGGG               JJJJJJJJJ            BBBBBBBBBBBBBBBBB   
+                                                                                                                                   
+                                                                                                                                   
+                                                                                                                                   
+                                                                                                                                  

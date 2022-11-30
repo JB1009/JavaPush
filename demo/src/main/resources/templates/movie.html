@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>안녕하세요 여기는 홈화면입니다</h2>
+<div>
+	<div style="display: flex;">
+		<p id="data-title-0">영화 이름 : </p>
+		<p id="data-time-0">시간 : </p>
+		<p id="data-year-0">개봉년도 : </p>
+		<p id="data-genre-0">장르 : </p>
+	</div>
+	<div>
+		<p id="data-title-0">영화 이름 : </p>
+		<p id="data-time-0">시간 : </p>
+		<p id="data-year-0">개봉년도 : </p>
+		<p id="data-genre-0">장르 : </p>
+	</div>
+	<div>
+		<p id="data-title-0">영화 이름 : </p>
+		<p id="data-time-0">시간 : </p>
+		<p id="data-year-0">개봉년도 : </p>
+		<p id="data-genre-0">장르 : </p>
+	</div>
+	<div>
+		<p id="data-title-0">영화 이름 : </p>
+		<p id="data-time-0">시간 : </p>
+		<p id="data-year-0">개봉년도 : </p>
+		<p id="data-genre-0">장르 : </p>
+	</div>
+	<div>
+		<p id="data-title-0">영화 이름 : </p>
+		<p id="data-time-0">시간 : </p>
+		<p id="data-year-0">개봉년도 : </p>
+		<p id="data-genre-0">장르 : </p>
+	</div>
+</div>
+</body>
+ <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript">
+  
+  callMyAPI();
+  	function callMyAPI(){
+
+  		      var search = 'friends';
+  		      var type = 'series';
+  		      $.ajax({
+  		        url:'/api/v1/movies',
+  		        type: 'GET',
+  		        dataType: 'json',
+  		        success: function (response) {
+  		        $("#data").append(response[0].title);
+  		      	$("#data2").append(response[0].runtime);
+  		    		$("#data3").append(response[0].year);
+  		  			$("#data4").append(response[0].genre);
+  		        	//console.log(response);
+  		        },
+  		  	});
+  	} 
+  </script>
+</html>

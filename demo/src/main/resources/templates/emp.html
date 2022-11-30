@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>EMP 화면입니다!</h2>
+
+<table style="width:1000px; text-align:center;" id = "tab">
+
+ <input type="text" id="insert_empno" placeholder="사원번호를 입력하세요">
+ <input type="text" id="insert_ename" placeholder="사원이름을 입력하세요">
+ <input type="text" id="insert_job" placeholder="사원직책을 입력하세요">
+ <input type="text" id="insert_sal" placeholder="사원급여를 입력하세요">
+ <button type="button" id="bt">사원 추가</button>
+    <th id="empno">empno</th>
+    <th id="ename">ename</th>
+    <th id="job">job</th>
+    <th id="sal">sal</th>
+  </tr>
+</table>
+</body>
+</html>
+
+ <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript">
+  var tr = "";
+
+  $.ajax({
+        url:'/api/v1/emp',
+        type: 'GET',
+        dataType: 'json',
+        success: function (response) {
+        	
+        	for(var i=0;i<response.length;i++ ){
+        	tr = $("<tr> </tr>")
+   
+	  		
+	  			empno = $("<td>" + response[i].empno + "</td>");
+	  			ename = $("<td>" + response[i].ename + "</td>");
+	  			job = $("<td>" + response[i].job + "</td>");
+	  			sal = $("<td>" + response[i].sal + "</td>");
+	  			tr.append(empno);
+	  			tr.append(ename);
+	  			tr.append(job);
+	  			tr.append(sal);
+	  			$("#tab").append(tr);
+        	}
+
+        },
+  	});
+  
+  
+  window.onload = function (){
+	  document.getElementById("bt").addEventListener("click",dojoin)
+  }
+  
+  function dojoin(){
+	  
+	  var empno = $("#insert_empno").val();
+	  var ename = $("#insert_ename").val();
+	  var job = $("#insert_job").val();
+	  var sal = $("#insert_sal").val();
+	  
+	  var jsonData = {
+			  "empno" : empno,
+			  "ename" : ename,
+			  "job" : job,
+			  "sal" : sal
+	  }
+	  
+	  $.ajax({
+      	url: '/api/v1/emp/join',
+      	type: 'POST',
+      	contentType: 'application/json', //서버에 json 타입으로 보낼 예정(요청)
+      	data : JSON.stringify(jsonData),
+      	dataType: 'json',
+	        success: function (response) {
+	        	console.log(response);
+	        	alert("추가완료");
+	        	localtion.reload();
+	        }
+      });
+      
+  }
+  </script>
+</html>
